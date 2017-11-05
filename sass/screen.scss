@@ -1,0 +1,1288 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	overflow-x: hidden;
+	color: #333;
+	background-color: #000;
+	height: 100%;
+}
+
+body input:focus:required:invalid {
+	border: 3px solid #ff0000;
+}
+
+body input:required:valid {
+	border: 3px solid #3bdd5a;
+}
+
+header {
+	background: url(../images/zhkneftyanik.jpg) no-repeat;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-size: cover;
+	//	.container {
+	//		max-width: 1280px;
+	//	}
+	.menu-tr-line {
+		background-color: rgba(0, 151, 157, 0.95);
+		box-shadow: 0px 0px 8px rgba(127, 127, 127, 0.5), 0px 0px 8px rgba(127, 127, 127, 0.5);
+		max-width: 100%;
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		//SECOND MENU HIDDEN
+		.hidden-mnu {
+			display: none;
+			width: 300px;
+			position: relative;
+			background-color: rgba(0, 151, 157, 0.95);
+			margin: 65px auto;
+			ul {
+				text-align: center;
+				text-transform: uppercase;
+				li {
+					padding-left: 0;
+					list-style: none;
+					a {
+						padding: 10px 15px;
+						display: block;
+						font-family: Verdana, Tahoma, Geneva, sans-serif;
+						color: #fff;
+						font-size: 11px;
+						line-height: 14px;
+						font-weight: normal;
+						font-style: normal;
+					}
+				}
+				li:last-child {
+					border-right: none;
+				}
+				li:hover {
+					background-color: #00686E;
+				}
+			}
+		}
+		//SECOND MENU HIDDEN^^^
+		//toggle!//toggle!//toggle!//toggle!
+		.toggle-mnu {
+			position: absolute;
+			display: block;
+			width: 28px;
+			height: 28px;
+			margin-top: 14px;
+			span:after,
+			span:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 9px;
+			}
+			span:after {
+				top: 18px;
+			}
+			span {
+				position: relative;
+				display: block;
+			}
+			span,
+			span:after,
+			span:before {
+				width: 100%;
+				height: 2px;
+				background-color: white;
+				transition: all 0.3s;
+				backface-visibility: hidden;
+				border-radius: 2px;
+			}
+			&.on span {
+				background-color: transparent;
+			}
+			&.on span:before {
+				transform: rotate(45deg) translate(-1px, 0px);
+			}
+			&.on span:after {
+				transform: rotate(-45deg) translate(6px, -7px);
+			}
+		}
+		//toggle!//toggle!//toggle!//toggle!
+		.left-line {
+			float: left;
+			margin-top: 5px;
+			.menu-first {
+				text-align: center;
+				text-transform: uppercase;
+				span {
+					border-left: 1px solid;
+					border-color: #006837;
+					font-size: 25px;
+					padding-bottom: 7px;
+					margin-left: -3px;
+					margin-right: 1px;
+				}
+				li {
+					padding-left: 0;
+					display: inline-block;
+					list-style: none;
+					word-wrap: break-word;
+					vertical-align: middle;
+					//					border-right: 1px solid #006837;
+					padding: 7px 7px;
+					a {
+						p {
+							//						padding: 5px 5px;
+							font-family: Verdana, Tahoma, Geneva, sans-serif;
+							color: #fff;
+							font-size: 11px;
+							line-height: 14px;
+							font-weight: normal;
+							font-style: normal;
+						}
+					}
+				}
+				li:last-child {
+					border-right: none;
+					padding: 14px 7px;
+				}
+				li:nth-child(7) {
+					padding: 14px 7px;
+				}
+				li:hover {
+					background-color: #00686E;
+				}
+			}
+		}
+	}
+	.right-line {
+		float: right;
+		text-align: right;
+		margin-right: 5px;
+		.firtelnum {
+			color: #fff;
+			font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+			font-size: 16px;
+			line-height: 16px;
+			font-weight: bolder;
+			text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+			.sectelnum {
+				font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+				color: #fff;
+				font-size: 28px;
+				line-height: 28px;
+				font-weight: normal;
+				text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+			}
+			.sectelnum:hover {
+				color: #ffff00;
+			}
+		}
+		.firtelnum:hover {
+			color: #ffff00;
+		}
+		.backcall {
+			margin-top: 5px;
+			text-transform: uppercase;
+			a {
+				color: #fff;
+				font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+				font-size: 14px;
+				line-height: 14px;
+				font-style: italic;
+			}
+			a:hover {
+				color: #ffff00;
+				text-decoration: underline;
+			}
+		}
+		//callback
+		.pop_form {
+			display: block;
+			text-align: center;
+			margin: 50px auto 90px;
+			width: 220px;
+			background-color: #FF4500;
+			padding: 10px 25px;
+			border-radius: 15px;
+			color: #fff;
+			transition: all .25s ease;
+		}
+		.pop_form .button:hover {
+			background-color: #EC3F13;
+			box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .12), 0 4px 15px 0 rgba(0, 0, 0, .15);
+		}
+		//callback
+	}
+	.main-header-content {
+		margin-top: 60px;
+		.header-content {
+			float: left;
+			.header_h {
+				margin: 17px 0px;
+				font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+				font-size: 36px;
+				line-height: 36px;
+				color: #fff;
+				text-shadow: 0px 0px 8px rgba(0, 0, 43, 0.5), 0px 0px 8px rgba(0, 0, 43, 0.5), 3px 3px 4px rgba(127, 127, 127, 0.5);
+				.header_s {
+					text-transform: uppercase;
+				}
+			}
+		}
+		.right-content {
+			float: right;
+			margin-bottom: 100px;
+			.head-cont {
+				background: linear-gradient(to right, rgba(34, 181, 115, 0.69), rgba(0, 124, 55, 0.59) 200px);
+				margin-bottom: 10px;
+				text-align: right;
+				padding: 10px 25px 10px 55px;
+				.head_orange {
+					color: #FBB03B;
+					text-transform: uppercase;
+					font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+					font-size: 24px;
+					line-height: 29px;
+					text-shadow: 1px 1px 2px #000000;
+					font-weight: bold;
+					padding-bottom: 5px;
+				}
+				.head_h {
+					font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+					color: #fff;
+					font-size: 22px;
+					line-height: 26px;
+					text-transform: uppercase;
+					text-shadow: 1px 1px 2px #111111;
+					padding-bottom: 15px;
+				}
+				.head_simple {
+					font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+					color: #fff;
+					font-size: 18px;
+					line-height: 22px;
+					font-style: italic;
+					text-shadow: 1px 1px 2px #111111;
+				}
+				.big_yellow {
+					font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+					color: #fcee21;
+					font-size: 48px;
+					line-height: 58px;
+					text-shadow: 1px 1px 2px #111111;
+					.small_yellow {
+						text-transform: lowercase;
+						font-size: 18px;
+						line-height: 22px;
+						font-style: italic;
+					}
+				}
+			}
+		}
+	}
+}
+
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+section {
+	background-image: url(../images/debut_light.jpg);
+	.header-section {
+		text-align: center;
+		margin-top: 75px;
+		h2 {
+			font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+			font-size: 26px;
+			line-height: 31px;
+			color: #ff0000;
+			text-transform: uppercase;
+		}
+		h3 {
+			margin-top: 10px;
+			font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+			font-size: 20px;
+			line-height: 24px;
+			color: #229869;
+			text-transform: uppercase;
+		}
+		.separator_shadow {
+			//			background-image: url(../images/separator_shadow.png) no-repeat center bottom;
+			background-size: cover;
+			width: 100%;
+			left: 20px;
+			position: relative;
+			margin-bottom: 25px;
+			margin-top: 15px;
+		}
+	}
+	.article {
+		overflow: hidden;
+		margin: 20px auto;
+		max-width: 1007px;
+		box-shadow: 0px 0px 4px rgba(162, 162, 162, 0.5), 0px 0px 4px rgba(162, 162, 162, 0.5);
+		border: 1px solid #A2A2A2;
+		border-radius: 10px;
+		background-color: #fff;
+		position: relative;
+		.image-corners-yellow,
+		.image-corners-green,
+		.image-corners-blue,
+		.image-corners-red {
+			margin-top: 25px;
+			width: 150px;
+			height: 150px;
+			border: 5px solid #fff;
+			border-radius: 50%;
+			box-shadow: 0px 0px 8px rgba(127, 127, 127, 0.5), 0px 0px 8px rgba(127, 127, 127, 0.5);
+			text-align: center;
+			.text_inside_corners_yellow,
+			.text_inside_corners_green,
+			.text_inside_corners_blue,
+			.text_inside_corners_red {
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+				-pie-box-shadow: none;
+				color: #FFFFFF;
+				font-weight: bolder;
+				font-style: italic;
+				text-transform: uppercase;
+				span {
+					font-family: "Ubuntu-B", sans-serif;
+				}
+			}
+			.text_inside_corners_yellow,
+			.text_inside_corners_green {
+				line-height: 36px;
+				font-size: 26px;
+				margin: 48px 18px;
+			}
+			.text_inside_corners_blue {
+				line-height: 26px;
+				font-size: 22px;
+				margin: 40px 0;
+			}
+			.text_inside_corners_red {
+				line-height: 26px;
+				font-size: 22px;
+				margin: 55px 5px 0 0;
+			}
+		}
+		.image-corners-yellow {
+			background: linear-gradient(to right, #FCEE21, #FBB03B 100%);
+			margin-top: 70px;
+		}
+		.image-corners-green {
+			background: linear-gradient(to right, #22B573, #008E1F 100%);
+			margin-top: 135px;
+		}
+		.image-corners-blue {
+			background: linear-gradient(to right, #0069FF, #29B7E2 100%);
+			margin-top: 75px;
+		}
+		.image-corners-red {
+			background: linear-gradient(to right, #F7931E, #F15A24 100%);
+			margin-top: 75px;
+		}
+		.article-content {
+			margin: 0 0 0 50px;
+			.artcont-left-up,
+			.artcont-left-down,
+			.artcont-right-up,
+			.artcont-right-down,
+			.artcont-middle {
+				margin: 25px 0 25px;
+				height: 120px;
+				h3 {
+					font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+					font-size: 18px;
+					line-height: 22px;
+					text-transform: uppercase;
+					font-weight: bolder;
+				}
+				.red_htext {
+					color: #f15a24;
+				}
+				.green_htext {
+					color: #229869;
+				}
+				.blue_htext {
+					color: #0071bc;
+				}
+				p {
+					font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+					font-size: 14px;
+					line-height: 17px;
+					color: #484848;
+					font-style: italic;
+					padding: 10px 10px;
+				}
+			}
+		}
+	}
+	.article:last-child {
+		margin-bottom: 40px;
+	}
+}
+
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+//ОСОБЕННОСТИ ЖК НЕВТЯНИК
+.green-line {
+	background-color: #22B573;
+}
+
+.orange-line {
+	background-color: #F7931E;
+}
+
+.green-line,
+.orange-line {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 15px auto;
+	text-align: center;
+	box-shadow: 0px 0px 6px rgba(127, 127, 127, 0.5), 0px 0px 6px rgba(127, 127, 127, 0.5);
+	position: relative;
+	.content_green_line,
+	.content_orange_line {
+		.green_line_h,
+		.orange_line_h {
+			margin-top: 15px;
+			font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+			font-size: 26px;
+			line-height: 31px;
+			color: #fff;
+			text-transform: uppercase;
+			text-shadow: 0px 0px 4px #000000, 0px 0px 4px #000000;
+		}
+		.app {
+			margin: 25px auto;
+			input {
+				padding: 17px 40px;
+				border: 2px solid #c4c4c4;
+				text-align: center;
+				text-transform: uppercase;
+				font-style: italic;
+				margin-right: 25px;
+				outline: none;
+			}
+			input:hover {
+				border: 2px solid #22B573;
+			}
+			.zayavkaName {
+				margin-bottom: 10px;
+			}
+			.applicationTelephone {}
+			.applicationButton {
+				position: relative;
+				top: 3px;
+				-moz-box-shadow: inset 0px 1px 0px 0px #9acc85;
+				-webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+				box-shadow: inset 0px 1px 0px 0px #9acc85;
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #faad3a), color-stop(1, #f26326));
+				background: -moz-linear-gradient(top, #faad3a 5%, #f26326 100%);
+				background: -webkit-linear-gradient(top, #faad3a 5%, #f26326 100%);
+				background: -o-linear-gradient(top, #faad3a 5%, #f26326 100%);
+				background: -ms-linear-gradient(top, #faad3a 5%, #f26326 100%);
+				background: linear-gradient(to bottom, #faad3a 5%, #f26326 100%);
+//				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#faad3a', endColorstr='#f26326', GradientType=0);
+				background-color: #faad3a;
+				border: 2px solid #ffffff;
+				display: inline-block;
+				text-transform: uppercase;
+				cursor: pointer;
+				color: #ffffff;
+				font-family: Arial;
+				font-size: 21px;
+				font-weight: bold;
+				padding: 15px 40px;
+				text-decoration: none;
+				box-shadow: 0px 0px 15px -1px #6a6a6a;
+			}
+			.applicationButton:hover {
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F68B1E), color-stop(1, #f26326));
+				background: -moz-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+				background: -webkit-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+				background: -o-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+				background: -ms-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+				background: linear-gradient(to bottom, #F68B1E 5%, #f26326 100%);
+//				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f26326', endColorstr='#faad3a', GradientType=0);
+				background-color: #f26326;
+			}
+			.applicationButton:active {
+				background: #F36B22;
+			}
+		}
+	}
+}
+
+//ОДНОКОМНАТНЫЕ КВАРТИРЫ В ЖК НЕВТЯНИК
+.content-apartments {
+	background-image: url(../images/fon1.jpg);
+	text-align: center;
+	//	padding: 25px 0;
+	.apartments {
+		margin: 75px 0 25px;
+		.apt_h,
+		.apt_spa {
+			font-size: 26px;
+			line-height: 36px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+		.apt_spa {
+			color: #229869;
+		}
+		.first_line_apt {
+			display: inline-block;
+			margin: 15px 25px;
+			.header_apt {
+				margin-bottom: 25px;
+				position: relative;
+				.block-hidden {
+					display: none;
+					a {
+						img {
+//							padding: 35px 30px;
+						}
+					}
+				}
+				.biggest-img {
+					max-width: 340px;
+//					padding: 45px 45px;
+					
+				}
+			}
+			.header_apt:hover .block-hidden {
+				display: block;
+				position: absolute;
+//				top: 25px;
+//				left: 75px;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: url(../images/lupa2.png) 50% 50% no-repeat;
+				background-size: 75px auto;
+//				background-position: center;
+			}
+			.footer_apt {
+				box-shadow: 0 0 0 rgba(0, 0, 0, 0.3), -18px 0 20px -22px rgba(0, 0, 0, 0.8), 23px 0 20px -27px rgba(0, 0, 0, 0.8), 0 0 0 rgba(0, 0, 0, 0.1) inset;
+				margin: 35px 40px;
+				.apt_p_bold {
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 16px;
+					line-height: 19px;
+					color: #484848;
+					font-weight: bolder;
+				}
+				.apt_p_norm {
+					font-weight: normal;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 14px;
+					color: #484848;
+					font-weight: bolder;
+				}
+				.apt_green_h {
+					font-family: "Ubuntu-B", Arial, sans-serif;
+					font-size: 26px;
+					line-height: 36px;
+					color: #006837;
+					margin: 5px 55px 0;
+				}
+				.line_bottom {
+					border-top: 1px solid #7F7F7F;
+					width: 110px;
+					margin: 3px auto;
+				}
+				.apt_red_h {
+					font-family: "Ubuntu-B", Arial, sans-serif;
+					font-size: 24px;
+					line-height: 29px;
+					color: #f15a24;
+					margin-bottom: 20px;
+				}
+				.footer_btn_apt {
+					color: #fff;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 17px;
+					text-transform: uppercase;
+					background-color: #29ABE2;
+					border-radius: 5px;
+					letter-spacing: 1px;
+					transition: .1s;
+					box-shadow: 0px 0px 6px -1px #1a1a1a;
+					border: none;
+					margin: 10px auto;
+					padding: 3px 20px;
+					max-width: 152px;
+					display: block;
+				}
+				.footer_btn_apt:hover {
+					background-color: #29B7E2;
+					box-shadow: 0px 0px 11px -1px #1a1a1a;
+				}
+				.under-button {
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 13px;
+					line-height: 16px;
+					color: #747474;
+					font-style: italic;
+				}
+				.under-button:hover {
+					background-color: #f5ff00;
+					color: #000;
+					padding: 3px 12px;
+					border-radius: 15px;
+				}
+			}
+		}
+		.first_line_apt:last-child {}
+	}
+}
+
+//ФОТО ЖИЛОГО КОМЛПЕКС
+//ФОТО ЖИЛОГО КОМЛПЕКС
+//ФОТО ЖИЛОГО КОМЛПЕКС
+.gallery-buildings {
+	background-image: url(../images/debut_light.jpg);
+	padding-bottom: 20px;
+	.gal-cont {
+		text-align: center;
+		.apt_h,
+		.apt_spa {
+			margin: 75px 0 15px;
+			font-size: 26px;
+			line-height: 36px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+		.apt_spa {
+			color: #229869;
+		}
+	}
+	.gal-phts {
+		margin: 5px 5px;
+		text-align: center;
+		img {
+			display: inline-block;
+			margin: 1px 3px;
+			border: 3px solid #fff;
+			box-shadow: 0px 0px 3px 1px #a8a8a8;
+		}
+		img:hover {
+			border: 3px solid #00c979;
+		}
+	}
+}
+
+.map {
+	background-color: #f0f0f0;
+	.gal-cont {
+		text-align: center;
+		.apt_h,
+		.apt_spa {
+			margin: 75px 0 15px;
+			font-size: 26px;
+			line-height: 36px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+		.apt_spa {
+			color: #229869;
+		}
+	}
+}
+
+.under-map {
+	background-image: url(../images/brickwall.jpg);
+	.gal-cont {
+		text-align: center;
+		.apt_h,
+		.apt_spa {
+			margin: 75px 0 15px;
+			font-size: 26px;
+			line-height: 36px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+		.apt_spa {
+			color: #229869;
+		}
+	}
+	.item {
+		background-color: #fff;
+		padding: 10px 20px;
+		text-align: center;
+		border-radius: 20px;
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .12), 0 4px 15px 0 rgba(0, 0, 0, .15);
+		transition: .2s;
+		margin: 50px 0;
+		img {
+			float: left;
+			//			margin: 10px 0 0 10px;
+			border-radius: 30px;
+		}
+		h3 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			line-height: 28px;
+			font-weight: bold;
+		}
+		span {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: bold;
+		}
+		p {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 18px;
+			padding: 10px 15px;
+			text-align: start;
+		}
+		.item-wrap {
+			padding: 10px 0 15px;
+		}
+	}
+	.item:hover {
+		box-shadow: 0 5px 11px 0 #f26326, 0 4px 15px 0 #f26326;
+	}
+	.item-middle {
+		position: relative;
+		background-color: #fff;
+		padding: 10px 20px;
+		text-align: center;
+		border-radius: 20px;
+		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .12), 0 4px 15px 0 rgba(0, 0, 0, .15);
+		margin: 30px auto;
+		img {
+			float: left;
+			margin: 10px 0 0 100px;
+			border-radius: 30px;
+		}
+		h3 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 29px;
+			font-weight: bold;
+		}
+		span {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: bold;
+		}
+		li {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 17px;
+			text-align: start;
+			margin: 20px 10px 15px 45px;
+			span {
+				font-weight: bold;
+			}
+		}
+		.item-wrap {
+			padding: 10px 0 40px;
+			margin-right: 105px;
+		}
+		.button {
+			margin: 60px auto 50px;
+			a {
+				background-color: #f26326;
+				color: #ffffff;
+				font-family: Arial;
+				font-weight: bold;
+				text-decoration: none;
+				box-shadow: 0px 0px 8px 0px #6a6a6a;
+				border-radius: 15px;
+				padding: 20px 20px;
+			}
+			.item-button {
+				-moz-box-shadow: inset 0px 1px 0px 0px #9acc85;
+				-webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+				box-shadow: inset 0px 1px 0px 0px #9acc85;
+				border: none;
+				text-transform: uppercase;
+				cursor: pointer;
+				p {}
+			}
+			.item-button:hover {
+				background-color: #22B573;
+			}
+		}
+	}
+	.item-middle:hover {
+		box-shadow: 0 5px 11px 0 #f26326, 0 4px 15px 0 #f26326;
+	}
+	ul {
+		list-style: disc;
+	}
+	.und-foot-map {
+		text-align: center;
+		h4 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: uppercase;
+			color: #534741;
+			font-weight: bold;
+		}
+		.banks {
+			margin-top: 15px;
+			img {
+				box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+				margin: 15px 15px;
+				border-radius: 5px;
+			}
+		}
+		p {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 17px;
+			color: #7f7f7f;
+			font-style: italic;
+			margin-bottom: 45px;
+		}
+	}
+}
+
+//ARROW//ARROW//ARROW
+//ARROW//ARROW//ARROW
+//ARROW//ARROW//ARROW
+.cont-arrow {
+	background: url(../images/fon.jpg);
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+	position: relative;
+	.arrow-wrap {
+		margin: 15px auto;
+		.arrow {
+			min-width: 50px;
+			max-width: 500px;
+			background: url(../images/arrow-white.png) no-repeat;
+			background-size: cover;
+			padding: 30px auto;
+			height: 67px;
+			position: relative;
+		}
+		img {}
+		h4 {
+			position: absolute;
+			top: 20px;
+			left: 50px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: inherit;
+			color: #22b573;
+			font-weight: bold;
+		}
+	}
+	.gal-cont {
+		text-align: center;
+		.apt_h,
+		.apt_spa {
+			margin: 75px 0 25px;
+			font-size: 26px;
+			line-height: 36px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+		.apt_spa {
+			color: #229869;
+		}
+	}
+	.und-arr-wrap {
+		.text-und-arr {
+			margin: 25px auto 55px;
+			text-align: center;
+			img {}
+			p {
+				margin: 15px auto;
+				text-align: start;
+				margin-left: 25px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 15px;
+				line-height: 24px;
+				color: #000;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+//ANOTHER WRAP//ANOTHER WRAP//ANOTHER WRAP
+//ANOTHER WRAP//ANOTHER WRAP//ANOTHER WRAP
+//ANOTHER WRAP//ANOTHER WRAP//ANOTHER WRAP
+.another-wrap {
+	background: url(../images/brickwall.jpg);
+	text-align: center;
+	.gal-cont {
+		text-align: center;
+		.apt_h {
+			margin: 75px 0 45px;
+			font-size: 26px;
+			line-height: 31px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+	}
+	.another {
+		margin: 10px auto;
+		position: relative;
+		img {}
+		.withsh-f:hover {
+			background: url(../images/u25832-r.png) no-repeat;
+		}
+		.withsh-s:hover {
+			background: url(../images/u25834-r.png) no-repeat;
+		}
+		.wrap-text {
+			margin: -17px auto;
+			background: #fff;
+			box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+			padding: 5px;
+			max-width: 305px;
+			h3 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 22px;
+				line-height: 32px;
+				color: #000;
+				font-weight: bold;
+			}
+			h3:hover {
+				color: #f15a24;
+			}
+		}
+		.wrap-text:hover {
+			box-shadow: 0px 0px 7px 0px #f15a24;
+			padding: 5px;
+		}
+	}
+	.logo-home {
+		margin: 70px auto;
+		.logo {
+			img {
+				margin-top: 50px;
+			}
+		}
+		.right-text {
+			span {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+				line-height: 24px;
+				font-style: italic;
+			}
+			h3 {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 29px;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+		}
+		.wrap-p {
+			text-align: start;
+			p {
+				font-family: Verdana, Tahoma, Geneva, sans-serif;
+				font-size: 14px;
+				line-height: 18px;
+				//				font-style: normal;
+				//				font-weight: normal;
+				margin-top: 15px;
+			}
+		}
+	}
+}
+
+//RECORD//RECORD//RECORD
+//RECORD//RECORD//RECORD
+//RECORD//RECORD//RECORD
+.wrap-record {
+	background: url(../images/fon.jpg);
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+	padding-bottom: 70px;
+	.gal-cont {
+		text-align: center;
+		.apt_h {
+			margin: 75px 0 45px;
+			font-size: 26px;
+			line-height: 31px;
+			font-family: "Ubuntu-B", Arial, sans-serif;
+			text-transform: uppercase;
+		}
+		.apt_h {
+			color: #ed1c24;
+		}
+	}
+	.assistant-madina,
+	.assistant-alexandr {
+		text-align: center;
+		.info {
+			vertical-align: middle;
+			.line-bottom {
+				border-top: 1px solid #7F7F7F;
+				max-width: 270px;
+				margin: 3px auto;
+			}
+			.tel {
+				position: relative;
+				top: 5px;
+				right: 10px;
+			}
+			h3 {
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 29px;
+				color: #484848;
+				font-weight: bold;
+				font-style: italic;
+				margin: 10px auto;
+			}
+			span {
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 29px;
+				color: #000;
+				font-weight: bold;
+				margin: 10px auto;
+			}
+			p {
+				font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 16px;
+				color: #7f7f7f;
+				font-style: italic;
+				margin: 10px auto;
+			}
+			a {
+				padding: 5px 7px;
+			}
+		}
+	}
+	.assistant-alexandr {
+		margin-top: 25px;
+	}
+}
+
+//FOOTER//FOOTER//FOOTER
+//FOOTER//FOOTER//FOOTER
+//FOOTER//FOOTER//FOOTER
+footer {
+	background: url(../images/tweed.jpg);
+	.content-footer {
+		text-align: center;
+		margin: 25px auto 75px;
+		.left-nav {
+			padding: 15px auto;
+			ul {
+				li {
+					a {
+						font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+						font-size: 13px;
+						line-height: 16px;
+						color: #fff;
+						text-transform: uppercase;
+					}
+					a:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		.right-nav {
+			padding: 15px auto;
+			ul {
+				li {
+					a {
+						font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+						font-size: 13px;
+						line-height: 16px;
+						color: #fff;
+						text-transform: uppercase;
+					}
+					a:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.footer-info {
+		text-align: left;
+		h3 {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 19px;
+			color: #000;
+			font-weight: bold;
+		}
+		p {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000;
+			font-weight: normal;
+		}
+		span {
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000;
+			font-weight: normal;
+			font-style: italic;
+		}
+	}
+}
+
+//CALLBACK//CALLBACK//CALLBACK
+.pop_h3 {
+	margin-top: 25px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 30px;
+	line-height: 36px;
+	color: #000;
+}
+
+.form-p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000;
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+.wwidw,
+.pop_form {
+	text-align: center;
+	//	margin: 30px auto 0;
+	//	background-color: rgba(0, 0, 0, 0.04);
+	//	border-radius: 15px;
+	padding: 0 60px 5px;
+	transition: all .5s ease;
+	//	box-shadow: 
+	//		0 5px 11px 0 rgba(0,0,0,.12),
+	//		0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+.pop_form input[type="text"],
+.pop_form input[type="tel"],
+.pop_form input[type="email"] {
+	border: 1px solid #FF4500;
+	margin-bottom: 10px;
+	height: 35px;
+	padding: 0 15px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.pop_form input[type="text"]:focus,
+.pop_form input[type="tel"]:focus,
+.pop_form input[type="email"]:focus {
+	border: 2px solid #ff0000;
+}
+
+.pop_form .button {
+	display: block;
+	text-align: center;
+	margin: 35px auto 0;
+	width: 220px;
+	background-color: #24d18c;
+	padding: 10px 25px;
+	color: #fff;
+	transition: all .25s ease;
+	border: none;
+	a {
+		outline: none;
+		color: #fff;
+	}
+}
+
+.pop_form .button:hover {
+	background-color: #ec5b36;
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+label {}
+
+.ipoteka_form input[type="text"],
+.ipoteka_form input[type="tel"],
+.ipoteka_form input[type="email"] {
+	border: 1px solid #FF4500;
+	margin-bottom: 20px;
+	height: 35px;
+	padding: 0 15px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.ipoteka_form .button {
+	display: block;
+	text-align: center;
+	margin: 50px auto 0;
+	width: 220px;
+	background-color: #24d18c;
+	padding: 10px 25px;
+	color: #fff;
+	transition: all .25s ease;
+	border: none;
+}
+
+.ipoteka_form .button:hover {
+	background-color: #ec5b36;
+	;
+	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+//CALLBACK//CALLBACK//CALLBACK
+.left-footer {
+	margin: 10px 0;
+}
+
+.right-footer {
+	margin: 0 0 15px;
+}
+
+.ipoteka_form {
+	text-align: center;
+}

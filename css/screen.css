@@ -1,0 +1,1571 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/screen.scss */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #333;
+  background-color: #000;
+  height: 100%;
+}
+
+/* line 26, ../sass/screen.scss */
+body input:focus:required:invalid {
+  border: 3px solid #ff0000;
+}
+
+/* line 30, ../sass/screen.scss */
+body input:required:valid {
+  border: 3px solid #3bdd5a;
+}
+
+/* line 34, ../sass/screen.scss */
+header {
+  background: url(../images/zhkneftyanik.jpg) no-repeat;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+}
+/* line 43, ../sass/screen.scss */
+header .menu-tr-line {
+  background-color: rgba(0, 151, 157, 0.95);
+  box-shadow: 0px 0px 8px rgba(127, 127, 127, 0.5), 0px 0px 8px rgba(127, 127, 127, 0.5);
+  max-width: 100%;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/* line 54, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu {
+  display: none;
+  width: 300px;
+  position: relative;
+  background-color: rgba(0, 151, 157, 0.95);
+  margin: 65px auto;
+}
+/* line 60, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu ul {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 63, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu ul li {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 66, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu ul li a {
+  padding: 10px 15px;
+  display: block;
+  font-family: Verdana, Tahoma, Geneva, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 77, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu ul li:last-child {
+  border-right: none;
+}
+/* line 80, ../sass/screen.scss */
+header .menu-tr-line .hidden-mnu ul li:hover {
+  background-color: #00686E;
+}
+/* line 87, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu {
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-top: 14px;
+}
+/* line 93, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu span:after,
+header .menu-tr-line .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+/* line 100, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu span:after {
+  top: 18px;
+}
+/* line 103, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu span {
+  position: relative;
+  display: block;
+}
+/* line 107, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu span,
+header .menu-tr-line .toggle-mnu span:after,
+header .menu-tr-line .toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+/* line 117, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu.on span {
+  background-color: transparent;
+}
+/* line 120, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu.on span:before {
+  transform: rotate(45deg) translate(-1px, 0px);
+}
+/* line 123, ../sass/screen.scss */
+header .menu-tr-line .toggle-mnu.on span:after {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+/* line 128, ../sass/screen.scss */
+header .menu-tr-line .left-line {
+  float: left;
+  margin-top: 5px;
+}
+/* line 131, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first {
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 134, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first span {
+  border-left: 1px solid;
+  border-color: #006837;
+  font-size: 25px;
+  padding-bottom: 7px;
+  margin-left: -3px;
+  margin-right: 1px;
+}
+/* line 142, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first li {
+  padding-left: 0;
+  display: inline-block;
+  list-style: none;
+  word-wrap: break-word;
+  vertical-align: middle;
+  padding: 7px 7px;
+}
+/* line 151, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first li a p {
+  font-family: Verdana, Tahoma, Geneva, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 162, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first li:last-child {
+  border-right: none;
+  padding: 14px 7px;
+}
+/* line 166, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first li:nth-child(7) {
+  padding: 14px 7px;
+}
+/* line 169, ../sass/screen.scss */
+header .menu-tr-line .left-line .menu-first li:hover {
+  background-color: #00686E;
+}
+/* line 175, ../sass/screen.scss */
+header .right-line {
+  float: right;
+  text-align: right;
+  margin-right: 5px;
+}
+/* line 179, ../sass/screen.scss */
+header .right-line .firtelnum {
+  color: #fff;
+  font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bolder;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 186, ../sass/screen.scss */
+header .right-line .firtelnum .sectelnum {
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  color: #fff;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+/* line 194, ../sass/screen.scss */
+header .right-line .firtelnum .sectelnum:hover {
+  color: #ffff00;
+}
+/* line 198, ../sass/screen.scss */
+header .right-line .firtelnum:hover {
+  color: #ffff00;
+}
+/* line 201, ../sass/screen.scss */
+header .right-line .backcall {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+/* line 204, ../sass/screen.scss */
+header .right-line .backcall a {
+  color: #fff;
+  font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: italic;
+}
+/* line 211, ../sass/screen.scss */
+header .right-line .backcall a:hover {
+  color: #ffff00;
+  text-decoration: underline;
+}
+/* line 217, ../sass/screen.scss */
+header .right-line .pop_form {
+  display: block;
+  text-align: center;
+  margin: 50px auto 90px;
+  width: 220px;
+  background-color: #FF4500;
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #fff;
+  transition: all .25s ease;
+}
+/* line 228, ../sass/screen.scss */
+header .right-line .pop_form .button:hover {
+  background-color: #EC3F13;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.12), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+/* line 234, ../sass/screen.scss */
+header .main-header-content {
+  margin-top: 60px;
+}
+/* line 236, ../sass/screen.scss */
+header .main-header-content .header-content {
+  float: left;
+}
+/* line 238, ../sass/screen.scss */
+header .main-header-content .header-content .header_h {
+  margin: 17px 0px;
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 43, 0.5), 0px 0px 8px rgba(0, 0, 43, 0.5), 3px 3px 4px rgba(127, 127, 127, 0.5);
+}
+/* line 245, ../sass/screen.scss */
+header .main-header-content .header-content .header_h .header_s {
+  text-transform: uppercase;
+}
+/* line 250, ../sass/screen.scss */
+header .main-header-content .right-content {
+  float: right;
+  margin-bottom: 100px;
+}
+/* line 253, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont {
+  background: linear-gradient(to right, rgba(34, 181, 115, 0.69), rgba(0, 124, 55, 0.59) 200px);
+  margin-bottom: 10px;
+  text-align: right;
+  padding: 10px 25px 10px 55px;
+}
+/* line 258, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont .head_orange {
+  color: #FBB03B;
+  text-transform: uppercase;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 1px 1px 2px #000000;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+/* line 268, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont .head_h {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #111111;
+  padding-bottom: 15px;
+}
+/* line 277, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont .head_simple {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: italic;
+  text-shadow: 1px 1px 2px #111111;
+}
+/* line 285, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont .big_yellow {
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  color: #fcee21;
+  font-size: 48px;
+  line-height: 58px;
+  text-shadow: 1px 1px 2px #111111;
+}
+/* line 291, ../sass/screen.scss */
+header .main-header-content .right-content .head-cont .big_yellow .small_yellow {
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: italic;
+}
+
+/* line 306, ../sass/screen.scss */
+section {
+  background-image: url(../images/debut_light.jpg);
+}
+/* line 308, ../sass/screen.scss */
+section .header-section {
+  text-align: center;
+  margin-top: 75px;
+}
+/* line 311, ../sass/screen.scss */
+section .header-section h2 {
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+/* line 318, ../sass/screen.scss */
+section .header-section h3 {
+  margin-top: 10px;
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #229869;
+  text-transform: uppercase;
+}
+/* line 326, ../sass/screen.scss */
+section .header-section .separator_shadow {
+  background-size: cover;
+  width: 100%;
+  left: 20px;
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+/* line 336, ../sass/screen.scss */
+section .article {
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 1007px;
+  box-shadow: 0px 0px 4px rgba(162, 162, 162, 0.5), 0px 0px 4px rgba(162, 162, 162, 0.5);
+  border: 1px solid #A2A2A2;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+/* line 345, ../sass/screen.scss */
+section .article .image-corners-yellow,
+section .article .image-corners-green,
+section .article .image-corners-blue,
+section .article .image-corners-red {
+  margin-top: 25px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(127, 127, 127, 0.5), 0px 0px 8px rgba(127, 127, 127, 0.5);
+  text-align: center;
+}
+/* line 356, ../sass/screen.scss */
+section .article .image-corners-yellow .text_inside_corners_yellow,
+section .article .image-corners-yellow .text_inside_corners_green,
+section .article .image-corners-yellow .text_inside_corners_blue,
+section .article .image-corners-yellow .text_inside_corners_red,
+section .article .image-corners-green .text_inside_corners_yellow,
+section .article .image-corners-green .text_inside_corners_green,
+section .article .image-corners-green .text_inside_corners_blue,
+section .article .image-corners-green .text_inside_corners_red,
+section .article .image-corners-blue .text_inside_corners_yellow,
+section .article .image-corners-blue .text_inside_corners_green,
+section .article .image-corners-blue .text_inside_corners_blue,
+section .article .image-corners-blue .text_inside_corners_red,
+section .article .image-corners-red .text_inside_corners_yellow,
+section .article .image-corners-red .text_inside_corners_green,
+section .article .image-corners-red .text_inside_corners_blue,
+section .article .image-corners-red .text_inside_corners_red {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -pie-box-shadow: none;
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-style: italic;
+  text-transform: uppercase;
+}
+/* line 366, ../sass/screen.scss */
+section .article .image-corners-yellow .text_inside_corners_yellow span,
+section .article .image-corners-yellow .text_inside_corners_green span,
+section .article .image-corners-yellow .text_inside_corners_blue span,
+section .article .image-corners-yellow .text_inside_corners_red span,
+section .article .image-corners-green .text_inside_corners_yellow span,
+section .article .image-corners-green .text_inside_corners_green span,
+section .article .image-corners-green .text_inside_corners_blue span,
+section .article .image-corners-green .text_inside_corners_red span,
+section .article .image-corners-blue .text_inside_corners_yellow span,
+section .article .image-corners-blue .text_inside_corners_green span,
+section .article .image-corners-blue .text_inside_corners_blue span,
+section .article .image-corners-blue .text_inside_corners_red span,
+section .article .image-corners-red .text_inside_corners_yellow span,
+section .article .image-corners-red .text_inside_corners_green span,
+section .article .image-corners-red .text_inside_corners_blue span,
+section .article .image-corners-red .text_inside_corners_red span {
+  font-family: "Ubuntu-B", sans-serif;
+}
+/* line 370, ../sass/screen.scss */
+section .article .image-corners-yellow .text_inside_corners_yellow,
+section .article .image-corners-yellow .text_inside_corners_green,
+section .article .image-corners-green .text_inside_corners_yellow,
+section .article .image-corners-green .text_inside_corners_green,
+section .article .image-corners-blue .text_inside_corners_yellow,
+section .article .image-corners-blue .text_inside_corners_green,
+section .article .image-corners-red .text_inside_corners_yellow,
+section .article .image-corners-red .text_inside_corners_green {
+  line-height: 36px;
+  font-size: 26px;
+  margin: 48px 18px;
+}
+/* line 376, ../sass/screen.scss */
+section .article .image-corners-yellow .text_inside_corners_blue,
+section .article .image-corners-green .text_inside_corners_blue,
+section .article .image-corners-blue .text_inside_corners_blue,
+section .article .image-corners-red .text_inside_corners_blue {
+  line-height: 26px;
+  font-size: 22px;
+  margin: 40px 0;
+}
+/* line 381, ../sass/screen.scss */
+section .article .image-corners-yellow .text_inside_corners_red,
+section .article .image-corners-green .text_inside_corners_red,
+section .article .image-corners-blue .text_inside_corners_red,
+section .article .image-corners-red .text_inside_corners_red {
+  line-height: 26px;
+  font-size: 22px;
+  margin: 55px 5px 0 0;
+}
+/* line 387, ../sass/screen.scss */
+section .article .image-corners-yellow {
+  background: linear-gradient(to right, #FCEE21, #FBB03B 100%);
+  margin-top: 70px;
+}
+/* line 391, ../sass/screen.scss */
+section .article .image-corners-green {
+  background: linear-gradient(to right, #22B573, #008E1F 100%);
+  margin-top: 135px;
+}
+/* line 395, ../sass/screen.scss */
+section .article .image-corners-blue {
+  background: linear-gradient(to right, #0069FF, #29B7E2 100%);
+  margin-top: 75px;
+}
+/* line 399, ../sass/screen.scss */
+section .article .image-corners-red {
+  background: linear-gradient(to right, #F7931E, #F15A24 100%);
+  margin-top: 75px;
+}
+/* line 403, ../sass/screen.scss */
+section .article .article-content {
+  margin: 0 0 0 50px;
+}
+/* line 405, ../sass/screen.scss */
+section .article .article-content .artcont-left-up,
+section .article .article-content .artcont-left-down,
+section .article .article-content .artcont-right-up,
+section .article .article-content .artcont-right-down,
+section .article .article-content .artcont-middle {
+  margin: 25px 0 25px;
+  height: 120px;
+}
+/* line 412, ../sass/screen.scss */
+section .article .article-content .artcont-left-up h3,
+section .article .article-content .artcont-left-down h3,
+section .article .article-content .artcont-right-up h3,
+section .article .article-content .artcont-right-down h3,
+section .article .article-content .artcont-middle h3 {
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/* line 419, ../sass/screen.scss */
+section .article .article-content .artcont-left-up .red_htext,
+section .article .article-content .artcont-left-down .red_htext,
+section .article .article-content .artcont-right-up .red_htext,
+section .article .article-content .artcont-right-down .red_htext,
+section .article .article-content .artcont-middle .red_htext {
+  color: #f15a24;
+}
+/* line 422, ../sass/screen.scss */
+section .article .article-content .artcont-left-up .green_htext,
+section .article .article-content .artcont-left-down .green_htext,
+section .article .article-content .artcont-right-up .green_htext,
+section .article .article-content .artcont-right-down .green_htext,
+section .article .article-content .artcont-middle .green_htext {
+  color: #229869;
+}
+/* line 425, ../sass/screen.scss */
+section .article .article-content .artcont-left-up .blue_htext,
+section .article .article-content .artcont-left-down .blue_htext,
+section .article .article-content .artcont-right-up .blue_htext,
+section .article .article-content .artcont-right-down .blue_htext,
+section .article .article-content .artcont-middle .blue_htext {
+  color: #0071bc;
+}
+/* line 428, ../sass/screen.scss */
+section .article .article-content .artcont-left-up p,
+section .article .article-content .artcont-left-down p,
+section .article .article-content .artcont-right-up p,
+section .article .article-content .artcont-right-down p,
+section .article .article-content .artcont-middle p {
+  font-family: Arial, Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #484848;
+  font-style: italic;
+  padding: 10px 10px;
+}
+/* line 439, ../sass/screen.scss */
+section .article:last-child {
+  margin-bottom: 40px;
+}
+
+/* line 447, ../sass/screen.scss */
+.green-line {
+  background-color: #22B573;
+}
+
+/* line 451, ../sass/screen.scss */
+.orange-line {
+  background-color: #F7931E;
+}
+
+/* line 455, ../sass/screen.scss */
+.green-line,
+.orange-line {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 15px auto;
+  text-align: center;
+  box-shadow: 0px 0px 6px rgba(127, 127, 127, 0.5), 0px 0px 6px rgba(127, 127, 127, 0.5);
+  position: relative;
+}
+/* line 465, ../sass/screen.scss */
+.green-line .content_green_line .green_line_h,
+.green-line .content_green_line .orange_line_h,
+.green-line .content_orange_line .green_line_h,
+.green-line .content_orange_line .orange_line_h,
+.orange-line .content_green_line .green_line_h,
+.orange-line .content_green_line .orange_line_h,
+.orange-line .content_orange_line .green_line_h,
+.orange-line .content_orange_line .orange_line_h {
+  margin-top: 15px;
+  font-family: "Ubuntu-B", Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 4px #000000, 0px 0px 4px #000000;
+}
+/* line 475, ../sass/screen.scss */
+.green-line .content_green_line .app,
+.green-line .content_orange_line .app,
+.orange-line .content_green_line .app,
+.orange-line .content_orange_line .app {
+  margin: 25px auto;
+}
+/* line 477, ../sass/screen.scss */
+.green-line .content_green_line .app input,
+.green-line .content_orange_line .app input,
+.orange-line .content_green_line .app input,
+.orange-line .content_orange_line .app input {
+  padding: 17px 40px;
+  border: 2px solid #c4c4c4;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-right: 25px;
+  outline: none;
+}
+/* line 486, ../sass/screen.scss */
+.green-line .content_green_line .app input:hover,
+.green-line .content_orange_line .app input:hover,
+.orange-line .content_green_line .app input:hover,
+.orange-line .content_orange_line .app input:hover {
+  border: 2px solid #22B573;
+}
+/* line 489, ../sass/screen.scss */
+.green-line .content_green_line .app .zayavkaName,
+.green-line .content_orange_line .app .zayavkaName,
+.orange-line .content_green_line .app .zayavkaName,
+.orange-line .content_orange_line .app .zayavkaName {
+  margin-bottom: 10px;
+}
+/* line 493, ../sass/screen.scss */
+.green-line .content_green_line .app .applicationButton,
+.green-line .content_orange_line .app .applicationButton,
+.orange-line .content_green_line .app .applicationButton,
+.orange-line .content_orange_line .app .applicationButton {
+  position: relative;
+  top: 3px;
+  -moz-box-shadow: inset 0px 1px 0px 0px #9acc85;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+  box-shadow: inset 0px 1px 0px 0px #9acc85;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #faad3a), color-stop(1, #f26326));
+  background: -moz-linear-gradient(top, #faad3a 5%, #f26326 100%);
+  background: -webkit-linear-gradient(top, #faad3a 5%, #f26326 100%);
+  background: -o-linear-gradient(top, #faad3a 5%, #f26326 100%);
+  background: -ms-linear-gradient(top, #faad3a 5%, #f26326 100%);
+  background: linear-gradient(to bottom, #faad3a 5%, #f26326 100%);
+  background-color: #faad3a;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 15px 40px;
+  text-decoration: none;
+  box-shadow: 0px 0px 15px -1px #6a6a6a;
+}
+/* line 519, ../sass/screen.scss */
+.green-line .content_green_line .app .applicationButton:hover,
+.green-line .content_orange_line .app .applicationButton:hover,
+.orange-line .content_green_line .app .applicationButton:hover,
+.orange-line .content_orange_line .app .applicationButton:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #F68B1E), color-stop(1, #f26326));
+  background: -moz-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+  background: -webkit-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+  background: -o-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+  background: -ms-linear-gradient(top, #F68B1E 5%, #f26326 100%);
+  background: linear-gradient(to bottom, #F68B1E 5%, #f26326 100%);
+  background-color: #f26326;
+}
+/* line 529, ../sass/screen.scss */
+.green-line .content_green_line .app .applicationButton:active,
+.green-line .content_orange_line .app .applicationButton:active,
+.orange-line .content_green_line .app .applicationButton:active,
+.orange-line .content_orange_line .app .applicationButton:active {
+  background: #F36B22;
+}
+
+/* line 537, ../sass/screen.scss */
+.content-apartments {
+  background-image: url(../images/fon1.jpg);
+  text-align: center;
+}
+/* line 541, ../sass/screen.scss */
+.content-apartments .apartments {
+  margin: 75px 0 25px;
+}
+/* line 543, ../sass/screen.scss */
+.content-apartments .apartments .apt_h,
+.content-apartments .apartments .apt_spa {
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 550, ../sass/screen.scss */
+.content-apartments .apartments .apt_h {
+  color: #ed1c24;
+}
+/* line 553, ../sass/screen.scss */
+.content-apartments .apartments .apt_spa {
+  color: #229869;
+}
+/* line 556, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt {
+  display: inline-block;
+  margin: 15px 25px;
+}
+/* line 559, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .header_apt {
+  margin-bottom: 25px;
+  position: relative;
+}
+/* line 562, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .header_apt .block-hidden {
+  display: none;
+}
+/* line 570, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .header_apt .biggest-img {
+  max-width: 340px;
+}
+/* line 576, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .header_apt:hover .block-hidden {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/lupa2.png) 50% 50% no-repeat;
+  background-size: 75px auto;
+}
+/* line 589, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3), -18px 0 20px -22px rgba(0, 0, 0, 0.8), 23px 0 20px -27px rgba(0, 0, 0, 0.8), 0 0 0 rgba(0, 0, 0, 0.1) inset;
+  margin: 35px 40px;
+}
+/* line 592, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .apt_p_bold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+  font-weight: bolder;
+}
+/* line 599, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .apt_p_norm {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #484848;
+  font-weight: bolder;
+}
+/* line 607, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .apt_green_h {
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 36px;
+  color: #006837;
+  margin: 5px 55px 0;
+}
+/* line 614, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .line_bottom {
+  border-top: 1px solid #7F7F7F;
+  width: 110px;
+  margin: 3px auto;
+}
+/* line 619, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .apt_red_h {
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f15a24;
+  margin-bottom: 20px;
+}
+/* line 626, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .footer_btn_apt {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  background-color: #29ABE2;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: .1s;
+  box-shadow: 0px 0px 6px -1px #1a1a1a;
+  border: none;
+  margin: 10px auto;
+  padding: 3px 20px;
+  max-width: 152px;
+  display: block;
+}
+/* line 643, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .footer_btn_apt:hover {
+  background-color: #29B7E2;
+  box-shadow: 0px 0px 11px -1px #1a1a1a;
+}
+/* line 647, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .under-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #747474;
+  font-style: italic;
+}
+/* line 654, ../sass/screen.scss */
+.content-apartments .apartments .first_line_apt .footer_apt .under-button:hover {
+  background-color: #f5ff00;
+  color: #000;
+  padding: 3px 12px;
+  border-radius: 15px;
+}
+
+/* line 669, ../sass/screen.scss */
+.gallery-buildings {
+  background-image: url(../images/debut_light.jpg);
+  padding-bottom: 20px;
+}
+/* line 672, ../sass/screen.scss */
+.gallery-buildings .gal-cont {
+  text-align: center;
+}
+/* line 674, ../sass/screen.scss */
+.gallery-buildings .gal-cont .apt_h,
+.gallery-buildings .gal-cont .apt_spa {
+  margin: 75px 0 15px;
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 682, ../sass/screen.scss */
+.gallery-buildings .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 685, ../sass/screen.scss */
+.gallery-buildings .gal-cont .apt_spa {
+  color: #229869;
+}
+/* line 689, ../sass/screen.scss */
+.gallery-buildings .gal-phts {
+  margin: 5px 5px;
+  text-align: center;
+}
+/* line 692, ../sass/screen.scss */
+.gallery-buildings .gal-phts img {
+  display: inline-block;
+  margin: 1px 3px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 3px 1px #a8a8a8;
+}
+/* line 698, ../sass/screen.scss */
+.gallery-buildings .gal-phts img:hover {
+  border: 3px solid #00c979;
+}
+
+/* line 704, ../sass/screen.scss */
+.map {
+  background-color: #f0f0f0;
+}
+/* line 706, ../sass/screen.scss */
+.map .gal-cont {
+  text-align: center;
+}
+/* line 708, ../sass/screen.scss */
+.map .gal-cont .apt_h,
+.map .gal-cont .apt_spa {
+  margin: 75px 0 15px;
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 716, ../sass/screen.scss */
+.map .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 719, ../sass/screen.scss */
+.map .gal-cont .apt_spa {
+  color: #229869;
+}
+
+/* line 725, ../sass/screen.scss */
+.under-map {
+  background-image: url(../images/brickwall.jpg);
+}
+/* line 727, ../sass/screen.scss */
+.under-map .gal-cont {
+  text-align: center;
+}
+/* line 729, ../sass/screen.scss */
+.under-map .gal-cont .apt_h,
+.under-map .gal-cont .apt_spa {
+  margin: 75px 0 15px;
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 737, ../sass/screen.scss */
+.under-map .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 740, ../sass/screen.scss */
+.under-map .gal-cont .apt_spa {
+  color: #229869;
+}
+/* line 744, ../sass/screen.scss */
+.under-map .item {
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.12), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: .2s;
+  margin: 50px 0;
+}
+/* line 752, ../sass/screen.scss */
+.under-map .item img {
+  float: left;
+  border-radius: 30px;
+}
+/* line 757, ../sass/screen.scss */
+.under-map .item h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: bold;
+}
+/* line 763, ../sass/screen.scss */
+.under-map .item span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+/* line 769, ../sass/screen.scss */
+.under-map .item p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 15px;
+  text-align: start;
+}
+/* line 776, ../sass/screen.scss */
+.under-map .item .item-wrap {
+  padding: 10px 0 15px;
+}
+/* line 780, ../sass/screen.scss */
+.under-map .item:hover {
+  box-shadow: 0 5px 11px 0 #f26326, 0 4px 15px 0 #f26326;
+}
+/* line 783, ../sass/screen.scss */
+.under-map .item-middle {
+  position: relative;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.12), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+}
+/* line 791, ../sass/screen.scss */
+.under-map .item-middle img {
+  float: left;
+  margin: 10px 0 0 100px;
+  border-radius: 30px;
+}
+/* line 796, ../sass/screen.scss */
+.under-map .item-middle h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+}
+/* line 802, ../sass/screen.scss */
+.under-map .item-middle span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+/* line 808, ../sass/screen.scss */
+.under-map .item-middle li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: start;
+  margin: 20px 10px 15px 45px;
+}
+/* line 814, ../sass/screen.scss */
+.under-map .item-middle li span {
+  font-weight: bold;
+}
+/* line 818, ../sass/screen.scss */
+.under-map .item-middle .item-wrap {
+  padding: 10px 0 40px;
+  margin-right: 105px;
+}
+/* line 822, ../sass/screen.scss */
+.under-map .item-middle .button {
+  margin: 60px auto 50px;
+}
+/* line 824, ../sass/screen.scss */
+.under-map .item-middle .button a {
+  background-color: #f26326;
+  color: #ffffff;
+  font-family: Arial;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 0px 8px 0px #6a6a6a;
+  border-radius: 15px;
+  padding: 20px 20px;
+}
+/* line 834, ../sass/screen.scss */
+.under-map .item-middle .button .item-button {
+  -moz-box-shadow: inset 0px 1px 0px 0px #9acc85;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #9acc85;
+  box-shadow: inset 0px 1px 0px 0px #9acc85;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 843, ../sass/screen.scss */
+.under-map .item-middle .button .item-button:hover {
+  background-color: #22B573;
+}
+/* line 848, ../sass/screen.scss */
+.under-map .item-middle:hover {
+  box-shadow: 0 5px 11px 0 #f26326, 0 4px 15px 0 #f26326;
+}
+/* line 851, ../sass/screen.scss */
+.under-map ul {
+  list-style: disc;
+}
+/* line 854, ../sass/screen.scss */
+.under-map .und-foot-map {
+  text-align: center;
+}
+/* line 856, ../sass/screen.scss */
+.under-map .und-foot-map h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #534741;
+  font-weight: bold;
+}
+/* line 864, ../sass/screen.scss */
+.under-map .und-foot-map .banks {
+  margin-top: 15px;
+}
+/* line 866, ../sass/screen.scss */
+.under-map .und-foot-map .banks img {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  margin: 15px 15px;
+  border-radius: 5px;
+}
+/* line 872, ../sass/screen.scss */
+.under-map .und-foot-map p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7f7f7f;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+
+/* line 886, ../sass/screen.scss */
+.cont-arrow {
+  background: url(../images/fon.jpg);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+/* line 890, ../sass/screen.scss */
+.cont-arrow .arrow-wrap {
+  margin: 15px auto;
+}
+/* line 892, ../sass/screen.scss */
+.cont-arrow .arrow-wrap .arrow {
+  min-width: 50px;
+  max-width: 500px;
+  background: url(../images/arrow-white.png) no-repeat;
+  background-size: cover;
+  padding: 30px auto;
+  height: 67px;
+  position: relative;
+}
+/* line 902, ../sass/screen.scss */
+.cont-arrow .arrow-wrap h4 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: inherit;
+  color: #22b573;
+  font-weight: bold;
+}
+/* line 914, ../sass/screen.scss */
+.cont-arrow .gal-cont {
+  text-align: center;
+}
+/* line 916, ../sass/screen.scss */
+.cont-arrow .gal-cont .apt_h,
+.cont-arrow .gal-cont .apt_spa {
+  margin: 75px 0 25px;
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 924, ../sass/screen.scss */
+.cont-arrow .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 927, ../sass/screen.scss */
+.cont-arrow .gal-cont .apt_spa {
+  color: #229869;
+}
+/* line 932, ../sass/screen.scss */
+.cont-arrow .und-arr-wrap .text-und-arr {
+  margin: 25px auto 55px;
+  text-align: center;
+}
+/* line 936, ../sass/screen.scss */
+.cont-arrow .und-arr-wrap .text-und-arr p {
+  margin: 15px auto;
+  text-align: start;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+  font-weight: normal;
+}
+
+/* line 953, ../sass/screen.scss */
+.another-wrap {
+  background: url(../images/brickwall.jpg);
+  text-align: center;
+}
+/* line 956, ../sass/screen.scss */
+.another-wrap .gal-cont {
+  text-align: center;
+}
+/* line 958, ../sass/screen.scss */
+.another-wrap .gal-cont .apt_h {
+  margin: 75px 0 45px;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 965, ../sass/screen.scss */
+.another-wrap .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 969, ../sass/screen.scss */
+.another-wrap .another {
+  margin: 10px auto;
+  position: relative;
+}
+/* line 973, ../sass/screen.scss */
+.another-wrap .another .withsh-f:hover {
+  background: url(../images/u25832-r.png) no-repeat;
+}
+/* line 976, ../sass/screen.scss */
+.another-wrap .another .withsh-s:hover {
+  background: url(../images/u25834-r.png) no-repeat;
+}
+/* line 979, ../sass/screen.scss */
+.another-wrap .another .wrap-text {
+  margin: -17px auto;
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  padding: 5px;
+  max-width: 305px;
+}
+/* line 985, ../sass/screen.scss */
+.another-wrap .another .wrap-text h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: #000;
+  font-weight: bold;
+}
+/* line 992, ../sass/screen.scss */
+.another-wrap .another .wrap-text h3:hover {
+  color: #f15a24;
+}
+/* line 996, ../sass/screen.scss */
+.another-wrap .another .wrap-text:hover {
+  box-shadow: 0px 0px 7px 0px #f15a24;
+  padding: 5px;
+}
+/* line 1001, ../sass/screen.scss */
+.another-wrap .logo-home {
+  margin: 70px auto;
+}
+/* line 1004, ../sass/screen.scss */
+.another-wrap .logo-home .logo img {
+  margin-top: 50px;
+}
+/* line 1009, ../sass/screen.scss */
+.another-wrap .logo-home .right-text span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+}
+/* line 1015, ../sass/screen.scss */
+.another-wrap .logo-home .right-text h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* line 1023, ../sass/screen.scss */
+.another-wrap .logo-home .wrap-p {
+  text-align: start;
+}
+/* line 1025, ../sass/screen.scss */
+.another-wrap .logo-home .wrap-p p {
+  font-family: Verdana, Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 15px;
+}
+
+/* line 1040, ../sass/screen.scss */
+.wrap-record {
+  background: url(../images/fon.jpg);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 70px;
+}
+/* line 1044, ../sass/screen.scss */
+.wrap-record .gal-cont {
+  text-align: center;
+}
+/* line 1046, ../sass/screen.scss */
+.wrap-record .gal-cont .apt_h {
+  margin: 75px 0 45px;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: "Ubuntu-B", Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 1053, ../sass/screen.scss */
+.wrap-record .gal-cont .apt_h {
+  color: #ed1c24;
+}
+/* line 1057, ../sass/screen.scss */
+.wrap-record .assistant-madina,
+.wrap-record .assistant-alexandr {
+  text-align: center;
+}
+/* line 1060, ../sass/screen.scss */
+.wrap-record .assistant-madina .info,
+.wrap-record .assistant-alexandr .info {
+  vertical-align: middle;
+}
+/* line 1062, ../sass/screen.scss */
+.wrap-record .assistant-madina .info .line-bottom,
+.wrap-record .assistant-alexandr .info .line-bottom {
+  border-top: 1px solid #7F7F7F;
+  max-width: 270px;
+  margin: 3px auto;
+}
+/* line 1067, ../sass/screen.scss */
+.wrap-record .assistant-madina .info .tel,
+.wrap-record .assistant-alexandr .info .tel {
+  position: relative;
+  top: 5px;
+  right: 10px;
+}
+/* line 1072, ../sass/screen.scss */
+.wrap-record .assistant-madina .info h3,
+.wrap-record .assistant-alexandr .info h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: #484848;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px auto;
+}
+/* line 1081, ../sass/screen.scss */
+.wrap-record .assistant-madina .info span,
+.wrap-record .assistant-alexandr .info span {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+  font-weight: bold;
+  margin: 10px auto;
+}
+/* line 1089, ../sass/screen.scss */
+.wrap-record .assistant-madina .info p,
+.wrap-record .assistant-alexandr .info p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7f7f7f;
+  font-style: italic;
+  margin: 10px auto;
+}
+/* line 1097, ../sass/screen.scss */
+.wrap-record .assistant-madina .info a,
+.wrap-record .assistant-alexandr .info a {
+  padding: 5px 7px;
+}
+/* line 1102, ../sass/screen.scss */
+.wrap-record .assistant-alexandr {
+  margin-top: 25px;
+}
+
+/* line 1110, ../sass/screen.scss */
+footer {
+  background: url(../images/tweed.jpg);
+}
+/* line 1112, ../sass/screen.scss */
+footer .content-footer {
+  text-align: center;
+  margin: 25px auto 75px;
+}
+/* line 1115, ../sass/screen.scss */
+footer .content-footer .left-nav {
+  padding: 15px auto;
+}
+/* line 1119, ../sass/screen.scss */
+footer .content-footer .left-nav ul li a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 1126, ../sass/screen.scss */
+footer .content-footer .left-nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 1132, ../sass/screen.scss */
+footer .content-footer .right-nav {
+  padding: 15px auto;
+}
+/* line 1136, ../sass/screen.scss */
+footer .content-footer .right-nav ul li a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 1143, ../sass/screen.scss */
+footer .content-footer .right-nav ul li a:hover {
+  text-decoration: underline;
+}
+/* line 1150, ../sass/screen.scss */
+footer .footer-info {
+  text-align: left;
+}
+/* line 1152, ../sass/screen.scss */
+footer .footer-info h3 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  font-weight: bold;
+}
+/* line 1159, ../sass/screen.scss */
+footer .footer-info p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  font-weight: normal;
+}
+/* line 1166, ../sass/screen.scss */
+footer .footer-info span {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 1178, ../sass/screen.scss */
+.pop_h3 {
+  margin-top: 25px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000;
+}
+
+/* line 1186, ../sass/screen.scss */
+.form-p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/* line 1195, ../sass/screen.scss */
+.wwidw,
+.pop_form {
+  text-align: center;
+  padding: 0 60px 5px;
+  transition: all .5s ease;
+}
+
+/* line 1208, ../sass/screen.scss */
+.pop_form input[type="text"],
+.pop_form input[type="tel"],
+.pop_form input[type="email"] {
+  border: 1px solid #FF4500;
+  margin-bottom: 10px;
+  height: 35px;
+  padding: 0 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* line 1219, ../sass/screen.scss */
+.pop_form input[type="text"]:focus,
+.pop_form input[type="tel"]:focus,
+.pop_form input[type="email"]:focus {
+  border: 2px solid #ff0000;
+}
+
+/* line 1225, ../sass/screen.scss */
+.pop_form .button {
+  display: block;
+  text-align: center;
+  margin: 35px auto 0;
+  width: 220px;
+  background-color: #24d18c;
+  padding: 10px 25px;
+  color: #fff;
+  transition: all .25s ease;
+  border: none;
+}
+/* line 1235, ../sass/screen.scss */
+.pop_form .button a {
+  outline: none;
+  color: #fff;
+}
+
+/* line 1241, ../sass/screen.scss */
+.pop_form .button:hover {
+  background-color: #ec5b36;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 1249, ../sass/screen.scss */
+.ipoteka_form input[type="text"],
+.ipoteka_form input[type="tel"],
+.ipoteka_form input[type="email"] {
+  border: 1px solid #FF4500;
+  margin-bottom: 20px;
+  height: 35px;
+  padding: 0 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* line 1260, ../sass/screen.scss */
+.ipoteka_form .button {
+  display: block;
+  text-align: center;
+  margin: 50px auto 0;
+  width: 220px;
+  background-color: #24d18c;
+  padding: 10px 25px;
+  color: #fff;
+  transition: all .25s ease;
+  border: none;
+}
+
+/* line 1272, ../sass/screen.scss */
+.ipoteka_form .button:hover {
+  background-color: #ec5b36;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* line 1279, ../sass/screen.scss */
+.left-footer {
+  margin: 10px 0;
+}
+
+/* line 1283, ../sass/screen.scss */
+.right-footer {
+  margin: 0 0 15px;
+}
+
+/* line 1287, ../sass/screen.scss */
+.ipoteka_form {
+  text-align: center;
+}

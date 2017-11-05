@@ -1,0 +1,19 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* font-family: "Ubuntu-B"; */
+@font-face {
+  font-family: "Ubuntu-B";
+  src: url("../fonts/UbuntuBold5/Ubuntu-B.eot");
+  src: url("../fonts/UbuntuBold5/Ubuntu-B.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuBold5/Ubuntu-B.woff") format("woff"), url("../fonts/UbuntuBold5/Ubuntu-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "PT_Sans-Web-Bold"; */
+@font-face {
+  font-family: "UbuntuMonoBold5";
+  src: url("../fonts/UbuntuBold5/Ubuntu_mono-B.eot");
+  src: url("../fonts/UbuntuBold5/UbuntuMono-B.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuBold5/UbuntuMono-B.woff") format("woff"), url("../fonts/UbuntuBold5/UbuntuMono-B.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

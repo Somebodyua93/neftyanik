@@ -1,0 +1,104 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /* line 6, ../sass/media.scss */
+  .wrap-text {
+    margin: -17px 185px;
+  }
+
+  /* line 13, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt .last-ftapt {
+    width: 235px;
+    margin: 0 auto;
+  }
+  /* line 24, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt .header_apt .biggest-img {
+    width: 100%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /* line 41, ../sass/media.scss */
+  section .section-content .article .image-corners-yellow,
+  section .section-content .article .image-corners-green,
+  section .section-content .article .image-corners-blue,
+  section .section-content .article .image-corners-red {
+    margin: 25px auto;
+  }
+  /* line 48, ../sass/media.scss */
+  section .section-content .article .article-content {
+    float: none;
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+
+  /* line 60, ../sass/media.scss */
+  .app input {
+    margin: 0 25px 10px;
+  }
+  /* line 64, ../sass/media.scss */
+  .app .applicationButton {
+    margin-top: 15px;
+    right: 0;
+  }
+
+  /* line 72, ../sass/media.scss */
+  .content-apartments .apartments {
+    padding: 10px auto;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 102, ../sass/media.scss */
+  .content-apartments .apartments {
+    padding: 10px auto;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 118, ../sass/media.scss */
+  .item-wrap {
+    margin-right: 0;
+  }
+  /* line 120, ../sass/media.scss */
+  .item-wrap img {
+    margin-left: 0;
+  }
+
+  /* line 126, ../sass/media.scss */
+  header menu-tr-line {
+    height: 100px;
+  }
+
+  /* line 131, ../sass/media.scss */
+  .content-apartments {
+    padding-bottom: 75px;
+  }
+  /* line 134, ../sass/media.scss */
+  .content-apartments .apartments {
+    padding: 10px auto;
+  }
+  /* line 137, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt {
+    display: block;
+  }
+  /* line 142, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt .header_apt .apt_img {
+    width: 100%;
+  }
+  /* line 145, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt .header_apt .biggest-img {
+    width: 100%;
+  }
+  /* line 149, ../sass/media.scss */
+  .content-apartments .apartments .first_line_apt .footer_apt {
+    margin: 35px 0;
+  }
+}
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

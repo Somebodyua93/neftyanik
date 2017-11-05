@@ -1,0 +1,189 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+	.wrap-text{
+			margin: -17px 185px;
+	}
+	
+	.content-apartments { 
+		.apartments { 
+			.first_line_apt {
+				.last-ftapt {
+					width: 235px;
+					margin: 0 auto;
+					
+				}
+				
+				.header_apt{
+					
+					.apt_img{
+						
+					}
+					.biggest-img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	section {
+		.section-content {
+			
+			.article {
+				
+				
+				.image-corners-yellow, 
+				.image-corners-green, 
+				.image-corners-blue, 
+				.image-corners-red {
+					margin: 25px auto;
+				}
+				
+				.article-content {
+					float: none;
+					text-align: center;
+					margin: 10px 0 10px 0;
+					
+				}
+			}
+		}
+	}
+	
+			.app {
+				
+				input {
+					margin: 0 25px 10px;
+				}
+				
+				.applicationButton {
+					margin-top: 15px;
+					right: 0;
+				}
+			}
+
+	.content-apartments{
+		
+		.apartments{
+			padding: 10px auto;
+			
+			.first_line_apt{
+				
+				.last-ftapt {
+					
+				}
+			}
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.green-line{
+		
+		.content_green_line{
+			
+			#application{
+				
+				.applicationButton{
+					
+				}
+			}
+		}
+	}
+	
+	.content-apartments{
+		
+		.apartments{
+			padding: 10px auto;
+			
+			.first_line_apt{
+				
+				.last-ftapt {
+					
+				}
+			}
+		}
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.item-wrap{
+		margin-right: 0;
+		img{
+			margin-left: 0;
+		}
+	}
+	
+	header {
+		menu-tr-line {
+			height: 100px;
+		}
+	}
+	
+	.content-apartments{
+		padding-bottom: 75px;
+		
+		.apartments{
+			padding: 10px auto;
+			
+			.first_line_apt{
+				display: block;
+				
+				.header_apt{
+					
+					.apt_img{
+						width: 100%;
+					}
+					.biggest-img{
+						width: 100%;
+					}
+				}
+				.footer_apt {
+					margin: 35px 0;
+				}
+			}
+		}
+	}
+	
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
